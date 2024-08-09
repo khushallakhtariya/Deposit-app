@@ -1,0 +1,337 @@
+.packages-container {
+    margin-top: -173px;
+    /* border: 1px solid red; */
+    /* max-width: 100%; */
+}
+.packages-content {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red;  */
+    align-items: center;
+    width: 44rem;
+}
+.packages-content p{
+    margin-top: -25px;
+    font-size: 12px;
+}
+.packages-content button{
+    background-color: white;
+    color:gray;
+    font-size: 12px;
+    margin-top: -27px;
+    border: none;
+}
+
+.packages-plan{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.packages-plan button {
+    background: none;
+    color: black;
+    font-size: 12px;
+    border: none;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -5px;
+        left: 0;
+        background-color: blue;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &:hover::after {
+        width: 100%;
+    }
+}
+.contact-support-button{
+    margin-left: 20px;
+    padding:8px;
+ 
+}
+
+
+hr{
+    margin-top: 5px;
+    width: 702px;
+}
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: flex-end; 
+  }
+  
+  .plan-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    margin-right: 45px;
+    height: 345px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+  }
+  
+  .plan-title {
+    font-size: 12px;
+    margin-top: -12px;
+    /* margin-right: 10px; */
+    margin-left: 0; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .plan-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plan-price {
+    font-size: 15px;
+    /* margin-right: 10px; */
+    margin-left: 49px;
+    font-weight: bold;
+    margin-top: -14px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .plan-price-details {
+    font-size: 10px;
+    margin-left: 36px;
+    color: #888;
+  }
+  
+  .plan-features {
+    list-style: none;
+    font-size: 10px;
+    gap: 50px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item {
+    padding: 10px 0;
+  }
+  
+  .plan-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 2px 57px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .plan-button:hover {
+    background-color: #0069d9;
+  }
+
+
+
+
+
+  .hplans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-right: 265px;
+  }
+  
+  .hplan-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    margin-right: -209px;
+    margin-top: -365px;
+    height: 345px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+  }
+  
+  .hplan-title {
+    font-size: 12px;
+    margin-top: -12px;
+    /* margin-right: 10px; */
+    margin-left: 0; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .hplan-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hplan-price {
+    font-size: 15px;
+    /* margin-right: 10px; */
+    margin-left: 49px;
+    font-weight: bold;
+    margin-top: -14px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .hplan-price-details {
+    font-size: 10px;
+    margin-left: 36px;
+    color: #888;
+  }
+  
+  .hplan-features {
+    list-style: none;
+    font-size: 10px;
+    gap: 50px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .hfeature-item {
+    padding: 10px 0;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+  }
+
+  .get-started {
+    background-color: #ffffff;
+    color: gray;
+    border: 1px solid rgb(115, 115, 115);
+    padding: 4px 5px;
+    border-radius: -1px 0 0 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .recommended {
+    background-color: #3e04ff;
+    color: white;
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+  }
+
+
+
+  .kplans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-right: 265px;
+  }
+  
+  .kplan-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    height: 345px;
+    margin-top: -318px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    /* margin-right: -390px;  */
+    margin-left: 241px;
+    /* right: 200px; */
+
+  }
+  
+  .kplan-title {
+    font-size: 12px;
+    margin-top: -12px;
+    /* margin-right: 10px; */
+    margin-left: 0; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .kplan-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .kplan-price {
+    font-size: 15px;
+    /* margin-right: 10px; */
+    margin-left: 49px;
+    font-weight: bold;
+    margin-top: -14px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .kplan-price-details {
+    font-size: 10px;
+    margin-left: 36px;
+    color: #888;
+  }
+  
+  .kplan-features {
+    list-style: none;
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 3px;
+  }
+
+  .kplan-features li {
+    line-height: 1.5; /* Adds space between lines */
+  }
+  
+  .kplan-button {
+    background-color: #f6f6f6;
+    color: gray;
+    border: none;
+    width: 175px;
+    padding: -1px 57px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 35px;
+    transition: background-color 0.3s;
+  }
+  
+  /* .kplan-button:hover {
+    background-color: #0069d9;
+  } */
+
+  .kfeature-item {
+    padding: 10px 0;
+  }
+  .fa-solid fa-bars {
+    margin-right: -10px;
+  }
+
+  

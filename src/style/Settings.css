@@ -1,0 +1,142 @@
+.s-container {
+  width: 73%;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  
+}
+.container-upper{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.settings-container i {
+    font-size: 38px;
+    margin-right: 10px;
+    margin-left: -51px;
+}
+.settings-title-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+.settings-subtitle{
+    margin-bottom: 10px;
+    font-size: 11px;
+    margin-top: -47px;
+}
+.settings-subtitle-text-s{
+    font-size: 11px;
+}
+
+.lower-container{
+    margin-left: 40px;
+    /* border: 1px solid green; */
+}
+.btn-grp{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+
+
+}
+.btn-grp .btn-1{
+    border: none;
+    color:black;
+    padding: 2px 26px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: lightgray;
+        color: black;
+        border-radius: 50px;
+    }
+}
+.your-teams{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-btn{
+    padding: 2px 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    &:hover{
+        background-color: rgb(10, 10, 184);
+    }
+}
+
+
+.team-form {
+    margin: 1px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-field {
+    margin-bottom: 5px;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-field select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-radius: 6px;
+    padding: 5px;
+}
+  
+  .member-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .member-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .member-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .member-initials {
+    background-color: rgb(202, 237, 202);
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin-right: 10px;
+    /* font-weight: bold; */
+    color: #333;
+  }
+  
+
+  
+  .remove-button {
+    border: none;
+    background-color: transparent;
+    &:hover{
+        background-color: lightgray;
+        border-radius: 50px;
+    }
+  }
