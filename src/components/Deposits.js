@@ -11,7 +11,7 @@ function Deposits() {
           </div>
         </div>
         <div className="buttono">
-          <button>ACCOUNT</button>
+          <button className="account-button">ACCOUNT</button>
           <button>PROFILE</button>
           <button>LOGOUT</button>
         </div>
