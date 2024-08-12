@@ -15,6 +15,7 @@ linkElement.crossOrigin = "anonymous";
 linkElement.referrerPolicy = "no-referrer";
 document.head.appendChild(linkElement);
 
+// Uncomment the rendering code
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
