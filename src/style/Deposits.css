@@ -23,83 +23,64 @@
 .collum h1{
     font-size:22px;
     width: 100%;
+    margin-left: -600px;
+    margin-top: -48px;
     text-align: center;
     margin-right: 325px;
 }
 .buttono {
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
+    background-color: white;
+    margin-top: 25px;
     align-items: center;
     width: 25px;
     position: absolute;
-    gap: 40px; 
-    margin-right: 290px;
+    gap: 100px; 
+    margin-right: 690px;
+    display: flex;
+    border-radius: 25px;
+  
+
 }
 .buttono button{
     border: none;
     color: #000000;
-    background-color: none;    
+    background-color: none;  
+    transition: all .2s ease;  
     &:hover{
-        background-color: #6d93d9;
+        background-color: darkgray;
+        border-radius: 50px;
         color: #fff;
         
     }
 }
 .buttons-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 123px;
     align-items: center;
-    margin-top: 100px;
-    margin-right: 2px;
+    margin-top: 75px;
+    margin-right: 23px;
     position: absolute;
+    justify-content: space-between;
+    transition: all .2s ease;
    
     
   }
   
-  .withdraw-button {
-    background-color: #007bff;
-    color: white;
+  .withdraw-button, .deposit-button, .summary-button{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     &:hover{
-        background-color: #0059ff;
-        color: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     }
   }
-  
-  .deposit-button {
-    background-color: #778899;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    &:hover{
-        background-color: #08090c;
-        color: #fff;
-    }
-  }
-  
-  .summary-button {
-    background-color: #20b2aa;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    &:hover{
-        background-color: #006e10;
-        color: #fff;
-    }
-  }
-
+ 
 
   .containert {
     display: flex;
@@ -126,7 +107,7 @@
   }
   
   input {
-    padding: 8px;
+    padding: 8px; 
     border: 1px solid #ccc;
     border-radius: 4px;
   }

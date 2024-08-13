@@ -46,7 +46,7 @@ function Deposits() {
               <input
                 type="text"
                 id="account-number"
-                value="********2222"
+                value="*********2222"
                 readOnly
               />
             </div>
@@ -75,7 +75,9 @@ function Deposits() {
           <button className="generate-button" onClick={generateReport}>
             Generate Report
           </button>
-          {reportGenerated && <p className="report-message">Report generated successfully!</p>}
+          {reportGenerated && (
+            <p className="report-message">Report generated successfully!</p>
+          )}
         </div>
       </div>
     </div>
