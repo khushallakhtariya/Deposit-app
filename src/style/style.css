@@ -415,6 +415,9 @@ input:checked + .slider:before {
   font-size: 11px;
   transition: background-color 0.3s ease;
   margin-left: 80px;
+  &:hover{
+    background-color: #555;
+  }
 }
 .button2 {
   background-color: grey;
@@ -426,6 +429,9 @@ input:checked + .slider:before {
   transition: background-color 0.3s ease;
   margin-left: 155px;
   margin-top: 20px;
+  &:hover{
+    background-color: #555;
+  }
 }
 
 .add-deposit-span{
