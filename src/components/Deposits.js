@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../style/Deposits.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Deposits() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [reportGenerated, setReportGenerated] = useState(false);
 
   const handleStartDateChange = (event) => {
     setStartDate(event.target.value);
@@ -16,15 +17,16 @@ function Deposits() {
 
   const generateReport = () => {
     console.log("Generating report for dates:", startDate, endDate);
-    setReportGenerated(true);
+    toast.success("Report generated successfully!");
   };
 
   return (
     <div>
+      <ToastContainer />
       <div className="containerd">
         <div className="row">
           <div className="collum">
-            <h1>banking deposits</h1>
+            <h1>Banking Deposits</h1>
           </div>
         </div>
         <div className="buttono">
@@ -34,52 +36,50 @@ function Deposits() {
         </div>
 
         <div className="buttons-container">
-          <button className="withdraw-button">Withdraw</button>
-          <button className="deposit-button">Deposit</button>
-          <button className="summary-button">Summary</button>
+          <button className="withdraw-button">
+            <i className="fa-solid fa-money-bill-transfer"></i>Withdraw
+          </button>
+          <button className="deposit-button">
+            <i className="fa-regular fa-file-code"></i>Deposit
+          </button>
+          <button className="summary-button">
+            <i className="fa-solid fa-list"></i>Summary
+          </button>
         </div>
         <div className="containert">
-          <h1>Transaction History</h1>
-          <div className="input-group-account">
-            <div className="input-group">
+          <p>Transaction History</p>
+
+          <div className="input-group-st">
+            <div>
               <label htmlFor="account-number">Account number:</label>
+              <input type="text" id="account-number" value="*********2222" readOnly />
+            </div>
+
+            <div>
+              <label htmlFor="start-date">Start date:</label>
               <input
-                type="text"
-                id="account-number"
-                value="*********2222"
-                readOnly
+                type="date"
+                id="start-date"
+                value={startDate}
+                onChange={handleStartDateChange}
               />
             </div>
-            <div className="input-group-date">
-              <div className="input-group">
-                <label htmlFor="start-date">Start date:</label>
-                <input
-                  type="date"
-                  id="start-date"
-                  value={startDate}
-                  onChange={handleStartDateChange}
-                />
-              </div>
 
-              <div className="input-group">
-                <label htmlFor="end-date">End date:</label>
-                <input
-                  type="date"
-                  id="end-date"
-                  value={endDate}
-                  onChange={handleEndDateChange}
-                />
-              </div>
+            <div>
+              <label htmlFor="end-date">End date:</label>
+              <input
+                type="date"
+                id="end-date"
+                value={endDate}
+                onChange={handleEndDateChange}
+              />
             </div>
           </div>
-          <button className="generate-button" onClick={generateReport}>
-            Generate Report
-          </button>
-          {reportGenerated && (
-            <p className="report-message">Report generated successfully!</p>
-          )}
         </div>
       </div>
+      <button className="generate-button" onClick={generateReport}>
+        Generate Report
+      </button>
     </div>
   );
 }

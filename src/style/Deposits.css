@@ -26,7 +26,7 @@
     margin-left: -600px;
     margin-top: -48px;
     text-align: center;
-    margin-right: 325px;
+    margin-right: -60px; 
 }
 .buttono {
     display: flex;
@@ -36,8 +36,8 @@
     align-items: center;
     width: 25px;
     position: absolute;
-    gap: 100px; 
-    margin-right: 690px;
+    gap: 126px; 
+    margin-right: 580px;
     display: flex;
     border-radius: 25px;
   
@@ -57,10 +57,10 @@
 }
 .buttons-container {
     display: flex;
-    gap: 123px;
+    gap: 100px;
     align-items: center;
     margin-top: 75px;
-    margin-right: 23px;
+    margin-right: 90px;
     position: absolute;
     justify-content: space-between;
     transition: all .2s ease;
@@ -70,11 +70,15 @@
   
   .withdraw-button, .deposit-button, .summary-button{
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
+    height: 60px;
     cursor: pointer;
     &:hover{
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -83,33 +87,44 @@
  
 
   .containert {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+
+    padding: 15px;
     font-family: sans-serif;
     margin-top: 150px;
+    /* margin-left:0px; */
   }
   
-  h1 {
-    margin-bottom: 20px;
-    font-size: 15px;
+
+  
+ 
+  .input-group-st{
+    display: flex;
+    width: 100%;  
+    gap: 2rem;
+    justify-content: center;
   }
   
-  .input-group {
+  .input-group-st > div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    width: 100%;
   }
-  
-  label {
+
+  .input-group-st label {
     margin-bottom: 5px;
+    font-size: 14px;
   }
-  
-  input {
+
+  .input-group-st input {
     padding: 8px; 
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
+  }
+
+  #account-number {
+    cursor: not-allowed;
+    width: 100%;
   }
   
   .generate-button {
@@ -118,9 +133,11 @@
     color: white;
     border: none;
     border-radius: 4px;
-    margin-left: -200px;
+    margin-left: 58px;
     cursor: pointer;
-    margin-top: -48px;
+    position: absolute;
+
+    margin-top: 150px;
   }
 
   .report-message {
