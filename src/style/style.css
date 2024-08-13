@@ -139,12 +139,12 @@ header {
 }
 
 .dark-theme .theme-toggle {
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
 
 .dark-theme .theme-toggle:hover {
-  background-color: #444;
+  background-color: #555;
 }
 
 .container.dark-theme {
@@ -159,7 +159,9 @@ header {
 }
 
 .container.dark-theme .icon,
-.container.dark-theme a {
+.container.dark-theme a,
+.container.dark-theme .user-name,
+.container.dark-theme .nav-item button {
   color: #fff;
 }
 
@@ -471,6 +473,16 @@ input:checked + .slider:before {
   margin-left: 76px;
 }
 
+.container.dark-theme .status-indicator.active {
+  background-color: #4CAF50;
+}
 
+.container.dark-theme .status-indicator.inactive {
+  background-color: #FFC107;
+}
 
-
+.container.dark-theme .button,
+.container.dark-theme .button2 {
+  background-color: #555;
+  color: #fff;
+}

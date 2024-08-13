@@ -12,7 +12,11 @@ function Home({ children }) {
   const [activeItem, setActiveItem] = useState(location.pathname);
 
   const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme);
+    setIsDarkTheme((prevTheme) => {
+      const newTheme = !prevTheme;
+      document.body.classList.toggle('dark-theme', newTheme);
+      return newTheme;
+    });
   };
 
   const navItems = [

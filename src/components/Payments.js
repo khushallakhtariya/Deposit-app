@@ -1,5 +1,7 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import "../style/Payments.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Payments() {
   const [cardHolderName, setCardHolderName] = useState("");
@@ -36,10 +38,12 @@ function Payments() {
     console.log("Expiry date:", expiryDate);
     console.log("CVV:", cvv);
     console.log("Save details:", saveDetails);
+    toast.success("Payment Successful");
   };
 
   return (
     <div className="pcontainer">
+      <ToastContainer />
       <h2>Payment</h2>
       <h3>Choose Payment Method</h3>
       <div className="payment-methods">
@@ -132,7 +136,9 @@ function Payments() {
               Save My Details For Future Purchases
             </label>
           </div>
-          <button type="submit">Confirm Payment</button>
+          <button type="submit" onClick={handleSubmit}>
+            Confirm Payment
+          </button>
         </form>
       </div>
     </div>

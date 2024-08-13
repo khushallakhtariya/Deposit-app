@@ -335,3 +335,53 @@ hr{
   }
 
   
+.dark-theme .packages-container {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-theme .packages-content button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .plan-card,
+.dark-theme .hplan-card,
+.dark-theme .kplan-card {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  height: auto;
+}
+
+.dark-theme .plan-icon,
+.dark-theme .hplan-icon,
+.dark-theme .kplan-icon {
+  border-color: #555;
+}
+
+.dark-theme .plan-price-details,
+.dark-theme .hplan-price-details,
+.dark-theme .kplan-price-details {
+  color: #bbb;
+}
+
+.dark-theme .plan-button,
+.dark-theme .get-started {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.dark-theme .plan-button:hover,
+.dark-theme .get-started:hover {
+  background-color: #45a049;
+}
+
+.dark-theme .recommended {
+  background-color: #3e04ff;
+}
+
+.dark-theme .kplan-button {
+  background-color: #333;
+  color: #fff;
+}

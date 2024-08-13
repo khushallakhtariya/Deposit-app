@@ -8,7 +8,11 @@
   left: 60%;
   transform: translateX(-50%);
   margin-top: 5px;
+}
 
+.dark-theme .pcontainer {
+  background-color: #222;
+  color: #fff;
 }
 
 h2 {
@@ -46,6 +50,11 @@ h3 {
   }
 }
 
+.dark-theme .payment-method {
+  background-color: #333;
+  border-color: #555;
+}
+
 .payment-method img {
   width: 10px;
   height: 25px;
@@ -78,6 +87,13 @@ input[type="checkbox"] {
   box-sizing: border-box;
 }
 
+.dark-theme input[type="text"],
+.dark-theme input[type="checkbox"] {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
 input[type="checkbox"] {
   width: auto;
   margin-right: 5px;
@@ -91,6 +107,15 @@ input[type="checkbox"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.dark-theme .pbutton {
+  background-color: #4CAF50;
+}
+
+.dark-theme .pbutton:hover {
+  background-color: #45a049;
+}
+
 .p-group {
   display: flex;
   width: 44%;
@@ -104,4 +129,3 @@ input[type="checkbox"] {
   margin-top: -18px;
   margin-left: 16px;
 }
-
